@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backgroundd"
+    android:background="@drawable/lightblue"
     android:fitsSystemWindows="true">
 
     <!-- ── TOP HEADER ── -->
@@ -42,7 +42,7 @@
                 android:text="🧥  Outerwear"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
+
                 android:fontFamily="@font/retro3d" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:text="Lost &amp; Found Items"
                 android:textSize="13sp"
-                android:textColor="#B0DFFF" />
+                android:textColor="#357EC7" />
 
         </LinearLayout>
 
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:text="4 items"
             android:textSize="12sp"
-            android:textColor="#FFFFFF"
+            android:textColor="#357EC7"
             android:paddingHorizontal="12dp"
             android:paddingVertical="5dp" />
 
