@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LostForYourFind">
         <activity
+            android:name=".Electronics"
+            android:exported="false" />
+        <activity
+            android:name=".Accessories"
+            android:exported="false" />
+        <activity
             android:name=".Outerwear"
             android:exported="false" />
         <activity

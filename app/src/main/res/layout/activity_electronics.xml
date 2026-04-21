@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/lightblue"
+    android:background="@drawable/darkblue"
     android:fitsSystemWindows="true">
 
     <!-- ── TOP HEADER ── -->
@@ -17,14 +17,13 @@
         android:paddingBottom="20dp"
         android:paddingHorizontal="20dp">
 
-        <!-- Back Arrow -->
         <TextView
             android:id="@+id/btnBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:text="←"
             android:textSize="22sp"
-
+            android:textColor="#FFFFFF"
             android:gravity="center"
             android:clickable="true"
             android:focusable="true" />
@@ -39,10 +38,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🧥  Outerwear"
+                android:text="📱  Electronics"
                 android:textSize="24sp"
                 android:textStyle="bold"
-
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/retro3d" />
 
             <TextView
@@ -50,17 +49,16 @@
                 android:layout_height="wrap_content"
                 android:text="Lost &amp; Found Items"
                 android:textSize="13sp"
-                android:textColor="#357EC7" />
+                android:textColor="#B0DFFF" />
 
         </LinearLayout>
 
-        <!-- Item count badge -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4 items"
             android:textSize="12sp"
-            android:textColor="#357EC7"
+            android:textColor="#FFFFFF"
             android:paddingHorizontal="12dp"
             android:paddingVertical="5dp" />
 
@@ -73,13 +71,42 @@
         android:background="#33FFFFFF"
         android:layout_marginHorizontal="20dp" />
 
+    <!-- ── PROOF NOTICE BANNER ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#1A1E88E5"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚠️"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proof of ownership required for all electronics"
+            android:textSize="12sp"
+            android:textColor="#B0DFFF"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
     <!-- ── ITEM LIST ── -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:paddingHorizontal="16dp"
-        android:paddingTop="16dp"
+        android:paddingTop="14dp"
         android:paddingBottom="16dp"
         android:clipToPadding="false">
 
@@ -88,7 +115,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ── ITEM 1: Navy Puffer Jacket ── -->
+            <!-- ── ITEM 1: iPhone 14 Pro ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item1"
                 android:layout_width="match_parent"
@@ -107,19 +134,18 @@
                     android:padding="16dp"
                     android:gravity="center_vertical">
 
-                    <!-- Icon bubble -->
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp">
+                        android:layout_height="54dp"
+                        >
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🧥"
+                            android:text="📱"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
 
-                    <!-- Text block -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -128,18 +154,34 @@
                         android:layout_marginStart="14dp"
                         android:layout_marginEnd="8dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Navy Puffer Jacket"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="#0D1B2A" />
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="iPhone 14 Pro"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0D1B2A" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" ★"
+                                android:textSize="13sp"
+                                android:textColor="#FF8C00"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Size M · Found near Room 204"
+                            android:text="Black, cracked screen protector"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -156,6 +198,7 @@
                                 android:text="Mar 18"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
+                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -163,9 +206,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 1st Floor"
+                                android:text="📍 Room 204"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
+                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -181,7 +225,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ── ITEM 2: Gray Nike Hoodie ── -->
+            <!-- ── ITEM 2: MacBook Air ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item2"
                 android:layout_width="match_parent"
@@ -202,11 +246,12 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp">
+                        android:layout_height="54dp"
+                        android:background="@drawable/item_icon_bg_blue">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="👕"
+                            android:text="💻"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
@@ -219,18 +264,34 @@
                         android:layout_marginStart="14dp"
                         android:layout_marginEnd="8dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Gray Nike Hoodie"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="#0D1B2A" />
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MacBook Air (Silver)"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0D1B2A" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" ★"
+                                android:textSize="13sp"
+                                android:textColor="#FF8C00"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Size L · Left on gym bleachers"
+                            android:text="13-inch, sticker on lid, study hall"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -244,9 +305,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mar 20"
+                                android:text="Mar 19"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
+                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -254,9 +316,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Gymnasium"
+                                android:text="📍 Study Hall"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
+                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -272,7 +335,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ── ITEM 3: Black Rain Jacket ── -->
+            <!-- ── ITEM 3: AirPods ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item3"
                 android:layout_width="match_parent"
@@ -293,11 +356,12 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp">
+                        android:layout_height="54dp"
+                        android:background="@drawable/item_icon_bg_blue">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🧥"
+                            android:text="🎧"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
@@ -310,18 +374,34 @@
                         android:layout_marginStart="14dp"
                         android:layout_marginEnd="8dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Black Rain Jacket"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-                            android:textColor="#0D1B2A" />
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="White AirPods (3rd Gen)"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0D1B2A" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" ★"
+                                android:textSize="13sp"
+                                android:textColor="#FF8C00"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Columbia, Size S · Found at entrance"
+                            android:text="In white charging case, under a chair"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -338,6 +418,7 @@
                                 android:text="Mar 21"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
+                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -345,9 +426,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Main Entrance"
+                                android:text="📍 Room 110"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
+                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -363,7 +445,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ── ITEM 4: Red Varsity Jacket ── -->
+            <!-- ── ITEM 4: TI-84 Calculator ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item4"
                 android:layout_width="match_parent"
@@ -384,11 +466,12 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp">
+                        android:layout_height="54dp"
+                        android:background="@drawable/item_icon_bg_blue">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🧣"
+                            android:text="🖩"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
@@ -404,7 +487,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Red &amp; White Varsity Jacket"
+                            android:text="TI-84 Plus Calculator"
                             android:textSize="15sp"
                             android:textStyle="bold"
                             android:textColor="#0D1B2A" />
@@ -412,7 +495,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="School logo on back · Found in cafeteria"
+                            android:text="Initials 'J.R.' scratched on back"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -429,6 +512,7 @@
                                 android:text="Mar 22"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
+                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -436,9 +520,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Cafeteria"
+                                android:text="📍 Math Wing"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
+                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -474,3 +559,4 @@
     </LinearLayout>
 
 </LinearLayout>
+<and

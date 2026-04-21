@@ -6,30 +6,57 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CardView cardOuterwear;
-    private CardView cardAccessories;
-    private CardView cardElectronics;
-    private CardView cardWaterBottles;
-
     private TextView outerwearEmoji;
+    private TextView accessoriesEmoji;
+    private TextView electronicsEmoji;
+    private TextView waterBottlesEmoji;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize
-        outerwearEmoji = findViewById(R.id.outerwear);
+        // Bind all 4 emoji TextViews using their IDs from the XML
+        outerwearEmoji   = findViewById(R.id.outerwear);
+        accessoriesEmoji = findViewById(R.id.accessories);
+        electronicsEmoji = findViewById(R.id.electronics);
+        waterBottlesEmoji = findViewById(R.id.waterbottles);
 
-        // When the outerwear emoji is tapped, go to the Outerwear page
+        // Outerwear emoji → Outerwear page
         outerwearEmoji.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Outerwear.class);
+                startActivity(intent);
+            }
+        });
+
+        // Accessories emoji → Accessories page
+        accessoriesEmoji.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Accessories.class);
+                startActivity(intent);
+            }
+        });
+
+        // Electronics emoji → Electronics page
+        electronicsEmoji.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Electronics.class);
+                startActivity(intent);
+            }
+        });
+
+        // Water Bottles emoji → WaterBottles page
+        waterBottlesEmoji.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WaterBottles.class);
                 startActivity(intent);
             }
         });

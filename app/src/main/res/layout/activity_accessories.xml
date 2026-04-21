@@ -17,14 +17,12 @@
         android:paddingBottom="20dp"
         android:paddingHorizontal="20dp">
 
-        <!-- Back Arrow -->
         <TextView
             android:id="@+id/btnBack"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:text="←"
             android:textSize="22sp"
-
             android:gravity="center"
             android:clickable="true"
             android:focusable="true" />
@@ -39,10 +37,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🧥  Outerwear"
+                android:text="👜  Accessories"
                 android:textSize="24sp"
                 android:textStyle="bold"
-
                 android:fontFamily="@font/retro3d" />
 
             <TextView
@@ -54,11 +51,10 @@
 
         </LinearLayout>
 
-        <!-- Item count badge -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4 items"
+            android:text="5 items"
             android:textSize="12sp"
             android:textColor="#357EC7"
             android:paddingHorizontal="12dp"
@@ -88,7 +84,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- ── ITEM 1: Navy Puffer Jacket ── -->
+            <!-- ── ITEM 1: Blue JanSport Backpack ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item1"
                 android:layout_width="match_parent"
@@ -107,19 +103,17 @@
                     android:padding="16dp"
                     android:gravity="center_vertical">
 
-                    <!-- Icon bubble -->
                     <FrameLayout
                         android:layout_width="54dp"
                         android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🧥"
+                            android:text="🎒"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
 
-                    <!-- Text block -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -131,7 +125,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Navy Puffer Jacket"
+                            android:text="Blue JanSport Backpack"
                             android:textSize="15sp"
                             android:textStyle="bold"
                             android:textColor="#0D1B2A" />
@@ -139,7 +133,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Size M · Found near Room 204"
+                            android:text="Blue &amp; black, keychain attached"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -153,7 +147,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mar 18"
+                                android:text="Mar 17"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
                                 android:paddingHorizontal="8dp"
@@ -163,7 +157,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 1st Floor"
+                                android:text="📍 PE Hallway"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
                                 android:paddingHorizontal="8dp"
@@ -181,7 +175,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ── ITEM 2: Gray Nike Hoodie ── -->
+            <!-- ── ITEM 2: Set of House Keys ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item2"
                 android:layout_width="match_parent"
@@ -206,7 +200,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="👕"
+                            android:text="🔑"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
@@ -222,7 +216,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Gray Nike Hoodie"
+                            android:text="Set of House Keys"
                             android:textSize="15sp"
                             android:textStyle="bold"
                             android:textColor="#0D1B2A" />
@@ -230,7 +224,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Size L · Left on gym bleachers"
+                            android:text="3 keys + small flashlight keychain"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -244,7 +238,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mar 20"
+                                android:text="Mar 19"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
                                 android:paddingHorizontal="8dp"
@@ -254,7 +248,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Gymnasium"
+                                android:text="📍 Library"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
                                 android:paddingHorizontal="8dp"
@@ -272,7 +266,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ── ITEM 3: Black Rain Jacket ── -->
+            <!-- ── ITEM 3: Black Sunglasses ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item3"
                 android:layout_width="match_parent"
@@ -297,7 +291,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🧥"
+                            android:text="🕶️"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
@@ -313,7 +307,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Black Rain Jacket"
+                            android:text="Black Sunglasses"
                             android:textSize="15sp"
                             android:textStyle="bold"
                             android:textColor="#0D1B2A" />
@@ -321,7 +315,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Columbia, Size S · Found at entrance"
+                            android:text="Ray-Ban style frames, in a tan case"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -335,7 +329,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mar 21"
+                                android:text="Mar 20"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
                                 android:paddingHorizontal="8dp"
@@ -345,7 +339,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Main Entrance"
+                                android:text="📍 Cafeteria"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
                                 android:paddingHorizontal="8dp"
@@ -363,7 +357,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ── ITEM 4: Red Varsity Jacket ── -->
+            <!-- ── ITEM 4: Silver Necklace ── -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/item4"
                 android:layout_width="match_parent"
@@ -388,7 +382,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🧣"
+                            android:text="📿"
                             android:textSize="24sp"
                             android:layout_gravity="center" />
                     </FrameLayout>
@@ -404,7 +398,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Red &amp; White Varsity Jacket"
+                            android:text="Silver Necklace"
                             android:textSize="15sp"
                             android:textStyle="bold"
                             android:textColor="#0D1B2A" />
@@ -412,7 +406,98 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="School logo on back · Found in cafeteria"
+                            android:text="Thin chain, small heart pendant"
+                            android:textSize="12sp"
+                            android:textColor="#6B7280"
+                            android:layout_marginTop="3dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mar 21"
+                                android:textSize="10sp"
+                                android:textColor="#1565C0"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="3dp"
+                                android:layout_marginEnd="6dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="📍 Stairwell B"
+                                android:textSize="10sp"
+                                android:textColor="#065F46"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="3dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textSize="24sp"
+                        android:textColor="#C0C8D8" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ── ITEM 5: Beige Crossbody Bag ── -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:layout_width="54dp"
+                        android:layout_height="54dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👜"
+                            android:textSize="24sp"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beige Crossbody Bag"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#0D1B2A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Small, faux-leather, contents inside"
                             android:textSize="12sp"
                             android:textColor="#6B7280"
                             android:layout_marginTop="3dp" />
@@ -436,7 +521,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="📍 Cafeteria"
+                                android:text="📍 Room 105"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
                                 android:paddingHorizontal="8dp"
