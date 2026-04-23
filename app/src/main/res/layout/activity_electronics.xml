@@ -198,7 +198,6 @@
                                 android:text="Mar 18"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -209,7 +208,6 @@
                                 android:text="📍 Room 204"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -246,8 +244,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -308,7 +305,6 @@
                                 android:text="Mar 19"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -319,7 +315,6 @@
                                 android:text="📍 Study Hall"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -356,8 +351,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -418,7 +412,6 @@
                                 android:text="Mar 21"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -429,7 +422,6 @@
                                 android:text="📍 Room 110"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -466,8 +458,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -512,7 +503,6 @@
                                 android:text="Mar 22"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -523,7 +513,6 @@
                                 android:text="📍 Math Wing"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -559,4 +548,3 @@
     </LinearLayout>
 
 </LinearLayout>
-<and
