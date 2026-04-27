@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750883198872",
+    "project_id": "lost-for-your-find",
+    "storage_bucket": "lost-for-your-find.firebasestorage.app",
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750883198872:android:d0d61f26c7a87e00d0bded",
+        "android_client_info": {
+          "package_name": "edu.bpi.lostforyourfind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfcII6_jzdfkrYMIZ5eu5N6fRVZztM5Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
