@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/dialog_electronics_claim.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/whiteblue">
+
+    <!-- ── Colored top stripe ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialogEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📱"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <!-- ── Body ── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <!-- Question / Confirmation text -->
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is this your item?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0D1B2A"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:fontFamily="@font/retro3d"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/dialogItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 14 Pro"
+            android:textSize="14sp"
+            android:textColor="#5B6B82"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="18dp" />
+
+        <!-- ── Found detail box ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Date"
+                    android:textSize="12sp"
+                    android:textColor="#6B7280" />
+                <TextView
+                    android:id="@+id/dialogDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="March 18, 2025"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D1B2A" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Found at"
+                    android:textSize="12sp"
+                    android:textColor="#6B7280" />
+                <TextView
+                    android:id="@+id/dialogLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room 204"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D1B2A" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── Proof of ownership box (hidden until Claim is tapped) ── -->
+        <LinearLayout
+            android:id="@+id/proofBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔐  Proof of Ownership Required"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please bring ONE of the following:"
+                android:textSize="11sp"
+                android:textColor="#4A5568"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Proof option 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="🧾"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purchase receipt for the item"
+                    android:textSize="11sp"
+                    android:textColor="#374151"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <!-- Proof option 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="📸"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photo of you using the item"
+                    android:textSize="11sp"
+                    android:textColor="#374151"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <!-- Proof option 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="🔢"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Serial number or IMEI of the device"
+                    android:textSize="11sp"
+                    android:textColor="#374151"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <!-- Proof option 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="🪪"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student ID for verification"
+                    android:textSize="11sp"
+                    android:textColor="#374151"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Claim button -->
+        <Button
+            android:id="@+id/btnClaim"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="✅  Claim This Item"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+
+            android:layout_marginBottom="10dp"
+            android:stateListAnimator="@null" /> />
+
+        <!-- Dismiss button -->
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="❌ Not My Item"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
