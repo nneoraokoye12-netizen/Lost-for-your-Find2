@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LostForYourFind">
         <activity
+            android:name=".Waterbottles"
+            android:exported="false"
+            android:theme="@style/Theme.LostForYourFind" />
+        <activity
             android:name=".Electronics"
             android:exported="false" />
         <activity
