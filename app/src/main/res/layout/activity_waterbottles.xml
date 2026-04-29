@@ -57,7 +57,6 @@
             android:text="4 items"
             android:textSize="12sp"
             android:textColor="#FFFFFF"
-            android:background="@drawable/badge_outline_white"
             android:paddingHorizontal="12dp"
             android:paddingVertical="5dp" />
 
@@ -106,8 +105,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -152,7 +150,6 @@
                                 android:text="Mar 17"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -163,7 +160,6 @@
                                 android:text="📍 Gymnasium"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -200,8 +196,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -246,7 +241,6 @@
                                 android:text="Mar 19"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -257,7 +251,6 @@
                                 android:text="📍 Cafeteria"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -294,8 +287,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -340,7 +332,6 @@
                                 android:text="Mar 20"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -351,7 +342,6 @@
                                 android:text="📍 Room 215"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>
@@ -388,8 +378,7 @@
 
                     <FrameLayout
                         android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/item_icon_bg_blue">
+                        android:layout_height="54dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -434,7 +423,6 @@
                                 android:text="Mar 21"
                                 android:textSize="10sp"
                                 android:textColor="#1565C0"
-                                android:background="@drawable/tag_blue_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp"
                                 android:layout_marginEnd="6dp" />
@@ -445,7 +433,6 @@
                                 android:text="📍 Main Office"
                                 android:textSize="10sp"
                                 android:textColor="#065F46"
-                                android:background="@drawable/tag_green_bg"
                                 android:paddingHorizontal="8dp"
                                 android:paddingVertical="3dp" />
                         </LinearLayout>

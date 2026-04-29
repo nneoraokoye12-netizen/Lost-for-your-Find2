@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-public class WaterBottles extends AppCompatActivity {
+public class Waterbottles extends AppCompatActivity {
 
     private CardView item1, item2, item3, item4;
 
